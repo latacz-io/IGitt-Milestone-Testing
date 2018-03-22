@@ -6,3 +6,16 @@ IGitt.Utils.__init__.py CachedDataMixin #Collects all the data and writes it int
 #Interface
 Dictates the attributes being used in igitt
 --> When writing a new implementation, you need a getter and a setter for every attribute mentioned in the Interface
+##Example
+Inteface | Implementation | GitLab API V4
+number | id | id
+x | x | iid
+scope | scope | x
+title | title | title
+description | description | description
+state | state | state
+created | created | created_at
+updated | updated | updated_at
+group | x | x
+issues | x | x
+merge_requests | x | x
