@@ -53,7 +53,9 @@ NotImplementedError:
 
 #Versuch einen Milestone zu erstellen
 ##Sollte eigentlich funktionieren, sagt aber nicht authorisiert
+## Auch hier durch das Private Token gefixt
 ### Self fehlt nach get / put update auch --> Statt self, GItLab Miletsone
+
 In [7]: TestMilestoneCreation = GitLabMilestone.create(Token, "seblat/test-milestones", "IGitt created milestone")
 ---------------------------------------------------------------------------
 RuntimeError                              Traceback (most recent call last)
