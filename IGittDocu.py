@@ -8,9 +8,10 @@ Dictates the attributes being used in igitt
 --> When writing a new implementation, you need a getter and a setter for every attribute mentioned in the Interface
 ##Example
 Inteface | Implementation | GitLab API V4
-number | id | id
-x | x | iid
-scope | scope | x
+number | number | id # done
+x | x | iid # done
+x | x | project_id # done
+scope | scope | x # TODO wie muss das rein?
 title | title | title
 description | description | description
 state | state | state
