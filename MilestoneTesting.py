@@ -21,11 +21,14 @@ TestMilestone.url #Url des Testmilestones ausgeben. --> Auf eine öffentliche an
 #Versuch den Titel anhand der ID zu ziehen
 ## Getter nicht implementiert
 ###--> TODO Getter implementieren
+#### "401, not authorized"
+##### Lösung: Falsches TOken verweendet, statt OAuth das Private verwenden
+#### Warum wird das nicht im Interface implementiert?
 In [1]: from IGitt import GitLab
 
 In [2]: from IGitt.GitLab.GitLabMilestone import GitLabMilestone
 
-In [3]: Token = GitLab.GitLabOAuthToken("sPYpZLhWQ2Mi4k7ppVxz")
+In [3]: Token = GitLab.GitLabPrivateToken("sPYpZLhWQ2Mi4k7ppVxz")
 
 In [4]: TestMilestone = GitLabMilestone(Token, "seblat/test-milestones", 489327)
 
@@ -50,6 +53,7 @@ NotImplementedError:
 
 #Versuch einen Milestone zu erstellen
 ##Sollte eigentlich funktionieren, sagt aber nicht authorisiert
+### Self fehlt nach get / put update auch --> Statt self, GItLab Miletsone
 In [7]: TestMilestoneCreation = GitLabMilestone.create(Token, "seblat/test-milestones", "IGitt created milestone")
 ---------------------------------------------------------------------------
 RuntimeError                              Traceback (most recent call last)
