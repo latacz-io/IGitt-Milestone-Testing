@@ -51,6 +51,12 @@ NotImplementedError                       Traceback (most recent call last)
 NotImplementedError:
 """
 
+#Versuch den Titel anhand des Objekts zu ändern
+##Geht im Objekt, kommt aber nicht bei GitLab an
+###Da fehlt noch ein put oder ein post?
+####Put hat funktioniert!
+
+
 #Versuch einen Milestone zu erstellen
 ##Sollte eigentlich funktionieren, sagt aber nicht authorisiert
 ## Auch hier durch das Private Token gefixt
